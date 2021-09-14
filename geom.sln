@@ -8,6 +8,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "Test\Test.csproj", "{A02A16E1-A741-4626-95AC-509CCE42E1AB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cmd", "cmd\cmd.csproj", "{4E0A0EB1-AEFE-4754-B4CB-41513466AD73}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D156D6D9-9E75-4484-920A-04D7E743A32B} = {D156D6D9-9E75-4484-920A-04D7E743A32B}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

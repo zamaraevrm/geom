@@ -10,10 +10,15 @@ namespace Geom.Lib.Shapes.Line
     {
         public VerticalLine(int x, int y1, int y2)
         {
-            for (int i = y1; i <= y2; i++)
+            if (y1 < 0 || y1 > y2 || x < 0)
             {
-                Locus.Add(new(x, i));
+                throw new ArgumentOutOfRangeException();
             }
+                for (int i = y1; i <= y2; i++)
+                {
+                    Locus.Add(new(x, i));
+                }
+            
         }
     }
 }
