@@ -8,6 +8,15 @@ namespace Geom.Lib.Shapes.Line
 {
     public abstract class Line: Shape
     {
-
+        public bool IsHit(Line outher)
+        {
+            foreach(var innerp in Locus)
+            {
+                foreach(var outherp in outher.Locus)
+                {
+                    if (innerp.Is)
+                }
+            }
+        }
     }
 }
